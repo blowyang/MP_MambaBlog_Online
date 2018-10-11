@@ -1,0 +1,110 @@
+<template name="index$51f015d4">
+  <view class="_div data-v-69b74d24 blog">
+    <view class="_div data-v-69b74d24 pages">
+      <view class="_div data-v-69b74d24 page__hd i-header">
+        <view class="_div data-v-69b74d24 g-bda-userinfo">
+          <view class="_div data-v-69b74d24 g-bda-userinfo-30">
+            <image class="_image data-v-69b74d24 userinfo-avatar" src="{{userData.userPic}}"></image>
+          </view>
+          <view wx:if="{{userData.nickName}}" class="_div data-v-69b74d24 g-bda-userinfo-70">
+            <label class="_span data-v-69b74d24 userinfo-nickname">{{ userData.nickName }}</label>
+            <view class="_br data-v-69b74d24"></view>
+            <label wx:if="{{signNum}}" class="_span data-v-69b74d24 userinfo-sign">已签到{{signNum}}天</label>
+            <label wx:else class="_span data-v-69b74d24"></label>
+          </view>
+          <view wx:else class="_div data-v-69b74d24 g-bda-userinfo-70">
+            <text class="_text data-v-69b74d24 userinfo-nickname">尚未解锁</text>
+            <text class="_text data-v-69b74d24 userinfo-sign">请点击下方的按钮解锁</text>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-69b74d24 zan-panel" style="border-top:0px;border-bottom:0px;"></view>
+      <loading hidden="{{authorize}}" class="_loading data-v-69b74d24"> 授权中... </loading>
+      <loading hidden="{{signShow}}" class="_loading data-v-69b74d24"> 签到中... </loading>
+      <loading hidden="{{loading}}" class="_loading data-v-69b74d24"> 获取数据中... </loading>
+      <view style="height:10px;background: #eee;" class="_div data-v-69b74d24"></view>
+      <view wx:if="{{userData.nickName}}" class="_div data-v-69b74d24 zan-panel">
+        <navigator url="../new/main" class="_a data-v-69b74d24 zan-cell zan-cell--access">
+          <view class="_div data-v-69b74d24">
+            <image src="/static/assets/my.png" style="width: 20px;height: 20px;margin-right: 8px;" class="_image data-v-69b74d24"></image>
+          </view>
+          <view class="_div data-v-69b74d24 zan-cell__bd"> 我的消息 </view>
+          <view class="_div data-v-69b74d24 badge-wonderfully" style="margin-left: 5px;" wx:if="{{noReadNewsCount}}"></view>
+        </navigator>
+        <navigator url="../collect/main" class="_a data-v-69b74d24 zan-cell zan-cell--access" style="border-top: 0.5px solid #eee;">
+          <view class="_div data-v-69b74d24">
+            <image src="/static/assets/notice.png" style="width: 20px;height: 20px;margin-right: 8px;" class="_image data-v-69b74d24"></image>
+          </view>
+          <view class="_div data-v-69b74d24 zan-cell__bd"> 我的收藏 </view>
+        </navigator>
+      </view>
+      <view wx:if="{{userData.nickName}}" class="_div data-v-69b74d24 contain">
+        <view class="_div data-v-69b74d24 zan-panel" style="border-top:0px;border-bottom:0px;width: 100%">
+          <view class="_div data-v-69b74d24 zan-cell zan-cell--access">
+            <view class="_div data-v-69b74d24 zan-cell__bd">
+              <image src="/static/assets/sign.png" class="_image data-v-69b74d24"></image>
+              <label class="_span data-v-69b74d24">签到</label>
+            </view>
+          </view>
+          <view class="_div data-v-69b74d24 item-wrapper">
+            <view wx:if="{{sign}}" class="_div data-v-69b74d24 unlock_v">
+              <view class="_div data-v-69b74d24 unlock-btn-cicle">
+                <view class="_i data-v-69b74d24 weui-icon-success weui-icon_msg"></view>
+              </view>
+              <text class="_text data-v-69b74d24 open-word">今日签到时间：{{signTime.createdAt}}</text>
+            </view>
+            <view wx:else class="_div data-v-69b74d24 unlock_v">
+              <view class="_div data-v-69b74d24 unlock-btn-cicle">
+                <button class="_button data-v-69b74d24 circle-btn-sign" type="default" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">签到</button>
+              </view>
+              <view class="_div data-v-69b74d24 open-word">点击按钮签到</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view wx:else class="_div data-v-69b74d24 contain">
+        <view class="_div data-v-69b74d24 zan-panel zan-panel-lock">
+          <view class="_div data-v-69b74d24 zan-cell zan-cell--access">
+            <view class="_div data-v-69b74d24 zan-cell__bd">
+              <image src="/static/assets/lock.png" class="_image data-v-69b74d24"></image>
+              <label class="_span data-v-69b74d24">解锁</label>
+            </view>
+          </view>
+          <view class="_div data-v-69b74d24 item-wrapper">
+            <view class="_div data-v-69b74d24 unlock_v">
+              <view class="_div data-v-69b74d24 unlock-btn-cicle">
+                <button class="_button data-v-69b74d24 circle-btn" open-type="getUserInfo" type="primary" bindgetuserinfo="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"> 解锁 </button>
+              </view>
+              <view class="_div data-v-69b74d24 open-word">点击解锁按钮解锁更多功能</view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-69b74d24 zan-panel zan-panel-bottom"></view>
+      </view>
+      <view class="_div data-v-69b74d24 contain">
+        <view class="_div data-v-69b74d24 zan-panel zan-panel-lock">
+          <view class="_div data-v-69b74d24 zan-cell zan-cell--access">
+            <view class="_div data-v-69b74d24 zan-cell__bd">
+              <image src="/static/assets/other.png" class="_image data-v-69b74d24"></image>
+              <label class="_span data-v-69b74d24">其他</label>
+              <view class="_div data-v-69b74d24"></view>
+            </view>
+          </view>
+          <view class="_div data-v-69b74d24 zan-cell zan-cell--access zan-other">
+            <button plain="true" style="border: 0;margin: 0;padding: 0;font-size: 18px;color:#000000;line-height: 1;width: 100%;text-align: left;" open-type="share" class="_button data-v-69b74d24">分享给好友 </button>
+          </view>
+          <view class="_div data-v-69b74d24 zan-cell-bottom"></view>
+          <view class="_div data-v-69b74d24 zan-cell zan-cell--access zan-other" style="padding-top: 10px;" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+            <label class="_span data-v-69b74d24">反馈意见</label>
+          </view>
+          <view class="_div data-v-69b74d24 zan-cell-bottom"></view>
+          <view class="_div data-v-69b74d24 zan-cell zan-cell--access zan-other" style="padding-top: 10px;" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+            <label class="_span data-v-69b74d24">关于本程序</label>
+          </view>
+          <view class="_div data-v-69b74d24 zan-cell-bottom"></view>
+        </view>
+        <view class="_div data-v-69b74d24 zan-panel zan-panel-bottom"></view>
+      </view>
+    </view>
+  </view>
+</template>

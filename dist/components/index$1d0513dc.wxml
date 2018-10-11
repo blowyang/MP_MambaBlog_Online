@@ -1,0 +1,73 @@
+<import src="wxParse$8bc625e2" />
+<template name="index$1d0513dc">
+  <view class="_div data-v-f7a663c0 blogdetail">
+    <loading hidden="{{loading}}" class="_loading data-v-f7a663c0"> 数据加载中... </loading>
+    <view class="_div data-v-f7a663c0 page">
+      <view class="_div data-v-f7a663c0 blog-detail">
+        <view class="_div data-v-f7a663c0 blog-detail-contaner">
+          <view class="_div data-v-f7a663c0 header">
+            <view class="_div data-v-f7a663c0 header-cover no-cover">
+              <view class="_div data-v-f7a663c0 caption">
+                <view class="_h1 data-v-f7a663c0 titl">{{detail.title}}</view>
+                <view class="_p data-v-f7a663c0 time">发布时间:
+                  <label class="_span data-v-f7a663c0">{{detail.createdAt}}</label>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="_div data-v-f7a663c0 article-section">
+            <view class="_div data-v-f7a663c0 article markdown-body">
+              <template data="{{...$root[$kk+'1'], $root}}" is="wxParse$8bc625e2"></template>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-f7a663c0 page-tail">
+          <block wx:if="{{userData.nickName}}">
+            <form bindsubmit="handleProxy" report-submit="true" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_form data-v-f7a663c0">
+              <view class="_div data-v-f7a663c0 resp-input-cell">
+                <input class="_input data-v-f7a663c0 resp-input" value="{{message}}" bindinput="handleProxy" type="text" placeholder="说点什么吧..." data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+              </view>
+              <view class="_div data-v-f7a663c0 like-btn">
+                <image wx:if="{{collect}}" class="_image data-v-f7a663c0 like-btn-img" src="../../static/assets/collect.png" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"></image>
+                <image wx:else class="_image data-v-f7a663c0 like-btn-img" src="../../static/assets/no-collect.png" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></image>
+              </view>
+              <button class="_button data-v-f7a663c0 resp-btn" type="primary" formType="submit">发送</button>
+            </form>
+          </block>
+          <view wx:else class="_div data-v-f7a663c0 need-login" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">点击此处授权，即可评论文章😆</view>
+        </view>
+        <view class="_div data-v-f7a663c0" style=" {{'padding: 20px 10px;display:' + show}}">
+          <view class="_div data-v-f7a663c0 resp-head">全部评论（{{ comments_count }}）</view>
+          <view class="_div data-v-f7a663c0 comment" wx:key="index" key="{{index}}" wx:for="{{comments}}" wx:for-index="index" wx:for-item="comment">
+            <view class="_div data-v-f7a663c0 comment-info">
+              <view class="_div data-v-f7a663c0 comment-author">
+                <view class="_div data-v-f7a663c0">
+                  <image class="_image data-v-f7a663c0 comment-author-icon" src="{{comment.replyer.userPic}}"></image>
+                </view>
+                <view class="_div data-v-f7a663c0 comment-author-info">
+                  <view class="_div data-v-f7a663c0">{{ comment.replyer.nickName }}</view>
+                  <view style="margin-top: 5px;" class="_div data-v-f7a663c0">{{ comment.createdAt }}</view>
+                </view>
+              </view>
+              <view class="_div data-v-f7a663c0 comment-author-position">
+                <view bindtap="handleProxy" data-eventid="{{'5-'+index}}" data-comkey="{{$k}}" class="_div data-v-f7a663c0">
+                  <image src="../../static/assets/comment.png" style="width: 20px;height: 20px;margin-bottom: 7px;" class="_image data-v-f7a663c0"></image>
+                </view>
+                <view class="_div data-v-f7a663c0">{{ index + 1 }}楼</view>
+              </view>
+            </view>
+            <view class="_div data-v-f7a663c0">
+              <view class="_div data-v-f7a663c0 h2w h2w-light">
+                <view class="_div data-v-f7a663c0 h2w__main">
+                  <view class="_div data-v-f7a663c0 zan-c-red" wx:if="{{comment.user}}">@{{ comment.user.nickName }}</view>
+                  <view class="_div data-v-f7a663c0 h2w__p" data-alpha="undefined" data-data="undefined" data-ename="undefined" data-href="undefined" data-id="undefined" data-name="undefined" data-src="undefined" data-url="undefined"
+                    id> {{ comment.content }} </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

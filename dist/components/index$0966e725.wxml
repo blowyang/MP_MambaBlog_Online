@@ -1,0 +1,29 @@
+<template name="index$0966e725">
+  <view class="_div data-v-07ed1a51 container">
+    <loading hidden="{{loading}}" class="_loading data-v-07ed1a51"> 数据加载中... </loading>
+    <view class="_div data-v-07ed1a51 page-body">
+      <view class="_div data-v-07ed1a51 page__bd">
+        <block wx:key="index" key="{{index}}" wx:for="{{collectList}}" wx:for-index="index" wx:for-item="item">
+          <view bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" class="_a data-v-07ed1a51">
+            <view class="_div data-v-07ed1a51 zan-panel">
+              <view class="_div data-v-07ed1a51 collect">
+                <image src="/static/assets/article.png" class="_image data-v-07ed1a51 collect-img"></image>
+              </view>
+              <view class="_div data-v-07ed1a51 zan-panel-media">
+                <view class="_div data-v-07ed1a51 zan-c-gray-dark zan-font-12">
+                  <view class="_div data-v-07ed1a51 zan-panel-box">文章收藏</view>
+                  <view class="_div data-v-07ed1a51 zan-panel-box">{{ item.createdAt }}</view>
+                  <view class="_div data-v-07ed1a51 zan-font-14" style="padding:10px 0">{{ item.article.title }}</view>
+                  <view class="_div data-v-07ed1a51 zan-c-gray zan-font-12">点击查看</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+        <view class="_div data-v-07ed1a51 weui-loadmore weui-loadmore_line" wx:if="{{!collectsCount}}">
+          <view class="_view data-v-07ed1a51 weui-loadmore__tips weui-loadmore__tips_in-line">暂无收藏</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

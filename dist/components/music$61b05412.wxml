@@ -1,0 +1,7 @@
+<template name="music$61b05412">
+  <view class="_div data-v-521005cd music {{[hide ? 'hide' : '']}}">
+    <view class="_div data-v-521005cd music-item {{[listen ? 'rotate' : '']}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <audio src="{{link}}" id="myAudio" loop class="_audio data-v-521005cd"></audio>
+    </view>
+  </view>
+</template>

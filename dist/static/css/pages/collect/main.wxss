@@ -1,0 +1,30 @@
+@import "/static/css/vendor.wxss";
+
+page {
+  background-color: #f3f3f3;
+  height: 100%;
+  font-size: 28rpx;
+  line-height: 1.6;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+.page-body {
+  width: 100%;
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+.page__bd {
+  margin-top: 20rpx;
+}
+.zan-panel {
+  padding: 20rpx;
+  position: relative;
+  background: #fff;
+  margin-top: 20rpx;
+  overflow: hidden;
+}

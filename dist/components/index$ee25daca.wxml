@@ -1,0 +1,29 @@
+<template name="index$ee25daca">
+  <view class="_div data-v-4e64ed47 container">
+    <loading hidden="{{loading}}" class="_loading data-v-4e64ed47"> 数据加载中... </loading>
+    <view class="_div data-v-4e64ed47 page-body">
+      <view class="_div data-v-4e64ed47 page__bd">
+        <block wx:key="index" key="{{index}}" wx:for="{{newsList}}" wx:for-index="index" wx:for-item="item">
+          <view bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" class="_a data-v-4e64ed47">
+            <view class="_div data-v-4e64ed47 zan-panel">
+              <view class="_div data-v-4e64ed47 collect">
+                <image src="/static/assets/new.png" class="_image data-v-4e64ed47 collect-img"></image>
+              </view>
+              <view class="_div data-v-4e64ed47 zan-panel-media">
+                <view class="_div data-v-4e64ed47 zan-c-gray-dark zan-font-12">
+                  <view class="_div data-v-4e64ed47 zan-panel-box">系统通知</view>
+                  <view class="_div data-v-4e64ed47 zan-panel-box">{{ item.createdAt }}</view>
+                  <view class="_div data-v-4e64ed47 zan-font-14" style="padding:10px 0">{{ item.content }}</view>
+                  <view class="_div data-v-4e64ed47 zan-c-gray zan-font-12">点击查看</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+        <view class="_div data-v-4e64ed47 weui-loadmore weui-loadmore_line" wx:if="{{!newsCount}}">
+          <view class="_view data-v-4e64ed47 weui-loadmore__tips weui-loadmore__tips_in-line">暂无消息</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

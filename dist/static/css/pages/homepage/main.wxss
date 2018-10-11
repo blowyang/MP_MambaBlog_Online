@@ -1,0 +1,83 @@
+@import "/static/css/vendor.wxss";
+
+.homepage {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: #fff;
+  z-index: 3;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  text-align: center;
+}
+.avatar {
+  margin-bottom: 40rpx;
+}
+._img {
+  width: 240rpx;
+  height: 240rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #FFF;
+  box-shadow: rgba(255, 255, 255, 0.1) 0 0 0 10rpx, rgba(0, 0, 0, 0.1) 0 0 10rpx 8rpx;
+  transition: transform .4s ease-out;
+}
+._img:hover {
+  transform: rotate(360deg);
+}
+.description {
+  margin-bottom: 40rpx;
+  font-weight: bold;
+  color: #6289ad;
+  font-size: 48rpx;
+}
+.tab .tab-item {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  list-style: none;
+}
+.tab-link {
+  padding: 20rpx;
+  color: #9caebf;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+._a {
+  background: none;
+}
+._a:hover {
+  color: #6289ad;
+  font-weight: 700;
+  background: none;
+}
+.music {
+  position: relative;
+}
+.hide {
+  display: none;
+}
+.music-item {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  width: 72rpx;
+  height: 72rpx;
+  background-image: url(http://p5vnm2kox.bkt.clouddn.com/images/music_pause.png);
+  background-size: 72rpx 72rpx;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+.rotate {
+  background-image: url(http://p5vnm2kox.bkt.clouddn.com/images/music.gif);
+}

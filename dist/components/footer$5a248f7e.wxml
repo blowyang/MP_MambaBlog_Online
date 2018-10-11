@@ -1,0 +1,11 @@
+<template name="footer$5a248f7e">
+  <view class="_div data-v-75bb1523 footer">
+    <view class="_div data-v-75bb1523 footer-item">
+      <view class="_p data-v-75bb1523 pull-left">Powered By
+        <label style="color: #7e8c8d" class="_span data-v-75bb1523">Bmob</label> And
+        <label style="color: #7e8c8d" class="_span data-v-75bb1523">Mamba Blog</label>
+        <label style="margin-left: 5px; color: rgb(226, 117, 117); font-size: 14px;" class="_span data-v-75bb1523">❤</label>
+      </view>
+    </view>
+  </view>
+</template>

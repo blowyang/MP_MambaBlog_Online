@@ -1,0 +1,89 @@
+@import "/static/css/vendor.wxss";
+
+page {
+  background: #eee;
+}
+.container {
+  background: #F9F9F9;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.zan-panel {
+  background: #fff;
+  border-top: 2rpx solid #e5e5e5;
+  border-bottom: 2rpx solid #e5e5e5;
+  overflow: hidden;
+}
+.zan-cell {
+  position: relative;
+  padding: 24rpx 30rpx;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 28rpx;
+}
+.zan-cell::after {
+  position: absolute;
+  left: 30rpx;
+  right: 0;
+  bottom: 0;
+  border-top: 1rpx solid #e5e5e5;
+  background: #e5e5e5;
+  content: ' ';
+}
+.zan-cell__bd {
+  flex: 1;
+}
+.zan-cell__ft {
+  position: relative;
+  text-align: right;
+  color: #666;
+}
+.zan-cell--last-child::after,
+.zan-cell:last-child::after {
+  display: none;
+}
+.zan-cell--access .zan-cell__ft {
+  padding-right: 26rpx;
+}
+.zan-cell--access .zan-cell__ft::after {
+  position: absolute;
+  top: 50%;
+  right: 4rpx;
+  content: " ";
+  display: inline-block;
+  height: 12rpx;
+  width: 12rpx;
+  border-width: 4rpx 4rpx 0 0;
+  border-color: #c8c8c8;
+  border-style: solid;
+  transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.zan-cell--switch {
+  padding-top: 12rpx;
+  padding-bottom: 12rpx;
+}
+.zan-btns {
+  margin: 30rpx;
+}
+.zan-btn {
+  position: relative;
+  color: #333;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-radius: 4rpx;
+  font-size: 32rpx;
+  line-height: 90rpx;
+  height: 90rpx;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+.zan-btn--primary {
+  color: #fff;
+  background-color: #4b0;
+  border-color: #0a0;
+}

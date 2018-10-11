@@ -1,0 +1,62 @@
+<template name="index$1c861ce3">
+  <view class="_div data-v-41542131 blog">
+    <loading hidden="{{loading}}" class="_loading data-v-41542131"> 数据加载中... </loading>
+    <view class="_div data-v-41542131 pages">
+      <view style="min-height: 100%" class="_div data-v-41542131">
+        <view class="_div data-v-41542131 header">
+          <view class="_div data-v-41542131 mac">
+            <view class="_div data-v-41542131 logo">
+              <image src="https://www.overxue.com/images/php.jpg" class="_img data-v-41542131"></image>
+            </view>
+            <view class="_p data-v-41542131">千里之行,始于足下 不忘初心,方能始终</view>
+          </view>
+        </view>
+        <view class="_div data-v-41542131 articleListPage-tags-cnt">
+          <view class="_div data-v-41542131">
+            <view class="_div data-v-41542131 articleListPage-tags">
+              <view class="_div data-v-41542131 grid-row">
+                <view class="_div data-v-41542131 content">
+                  <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{categories}}" wx:for-index="index" wx:for-item="item" class="_div data-v-41542131 {{[selectType === item.objectId ? 'active' : '']}}">{{item.name}} </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="_div data-v-41542131 article">
+          <view class="_div data-v-41542131 article-item">
+            <view wx:key="index" key="{{index}}" class="_div data-v-41542131 article-list" wx:for="{{articles}}" wx:for-index="index" wx:for-item="item">
+              <navigator url="{{'../detail/main?id=' + item.objectId}}" style="color:#000000" class="_a data-v-41542131">
+                <view class="_div data-v-41542131 label" hidden="{{!(index == 0 || index == 1)}}">
+                  <label class="_span data-v-41542131">new</label>
+                </view>
+                <view class="_h1 data-v-41542131 title">
+                  <view class="_a data-v-41542131">{{item.title}}</view>
+                </view>
+                <view class="_div data-v-41542131 introduction">
+                  <view class="_i data-v-41542131 icon-user">
+                    <label class="_span data-v-41542131 user">{{item.author}}</label>
+                  </view>
+                  <view class="_i data-v-41542131 icon-clock">
+                    <label class="_span data-v-41542131 time">{{item.createdAt}}</label>
+                  </view>
+                  <view class="_i data-v-41542131 icon-eye">
+                    <label class="_span data-v-41542131 view">{{item.read_counts}}</label>
+                  </view>
+                </view>
+                <view class="_div data-v-41542131 article-content"> {{item.excerpt}} </view>
+                <view class="_div data-v-41542131 readmore">
+                  <view class="_div data-v-41542131 right">
+                    <view class="_a data-v-41542131 readmore" style="display: inline">阅读全文</view>
+                  </view>
+                </view>
+              </navigator>
+            </view>
+          </view>
+          <view class="_div data-v-41542131 weui-loadmore weui-loadmore_line" wx:if="{{!nodata}}">
+            <view class="_view data-v-41542131 weui-loadmore__tips weui-loadmore__tips_in-line">已加载完</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

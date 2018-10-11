@@ -1,0 +1,26 @@
+<import src="music$61b05412" />
+<template name="index$f27b06a2">
+  <view class="_div data-v-d7658f06 homepage">
+    <template data="{{...$root[$kk+'0'], $root}}" is="music$61b05412"></template>
+    <view class="_div data-v-d7658f06 content">
+      <view class="_div data-v-d7658f06 avatar">
+        <image src="https://upload.jianshu.io/users/upload_avatars/6673460/1f56c2bb-1e2d-4e4c-8c51-316a0b659e7e.png?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120" class="_img data-v-d7658f06 avatar-item"></image>
+      </view>
+      <view class="_h1 data-v-d7658f06 description">Mamba Blog</view>
+      <view class="_ul data-v-d7658f06 tab">
+        <view class="_li data-v-d7658f06 tab-item">
+          <label class="_span data-v-d7658f06 tab-link">Web:www.mambaxin.com</label>
+        </view>
+        <view class="_li data-v-d7658f06 tab-item">
+          <label class="_span data-v-d7658f06 tab-link">QQ:462369233</label>
+        </view>
+        <view class="_li data-v-d7658f06 tab-item">
+          <label class="_span data-v-d7658f06 tab-link">GitHub:kesixin / Mamba</label>
+        </view>
+        <view class="_li data-v-d7658f06 tab-item">
+          <label class="_span data-v-d7658f06 tab-link">千里之行 始于足下</label>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
