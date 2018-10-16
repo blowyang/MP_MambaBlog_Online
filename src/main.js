@@ -17,7 +17,7 @@ export default {
         window: {
             backgroundTextStyle: 'light',
             navigationBarBackgroundColor: '#5F9EA0',
-            navigationBarTitleText: 'Mamba Blog',
+            navigationBarTitleText: '龙锦教育综合体',
             navigationBarTextStyle: '#fff'
         },
         tabBar: {

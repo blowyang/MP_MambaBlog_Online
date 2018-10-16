@@ -29,7 +29,7 @@ app.$mount();
         window: {
             backgroundTextStyle: 'light',
             navigationBarBackgroundColor: '#5F9EA0',
-            navigationBarTitleText: 'Mamba Blog',
+            navigationBarTitleText: '龙锦教育综合体',
             navigationBarTextStyle: '#fff'
         },
         tabBar: {
@@ -87,7 +87,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src\\App.vue"
+Component.options.__file = "src/App.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -97,9 +97,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5dcd0e30", Component.options)
+    hotAPI.createRecord("data-v-4790751d", Component.options)
   } else {
-    hotAPI.reload("data-v-5dcd0e30", Component.options)
+    hotAPI.reload("data-v-4790751d", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true

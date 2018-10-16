@@ -276,7 +276,7 @@
                 })
             },
             about(){
-                common.showModal('本程序后端使用Bmob实现，仅供学习使用，请勿使用于商业用途，如有问题，请联系QQ：462369233', '关于', false);
+                common.showModal('本小程序后端使用Bmob实现，由智为网络科技公司提供技术支持，如有问题，请联系QQ：405584182', '关于', false);
             },
             _getNewsCount(){
                 getNewsCount().then((res)=>{

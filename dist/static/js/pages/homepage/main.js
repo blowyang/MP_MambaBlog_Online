@@ -21,7 +21,7 @@ app.$mount();
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_d7658f06_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_2410e930_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(197);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -40,12 +40,12 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_index_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_d7658f06_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_2410e930_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_index_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src\\pages\\homepage\\index.vue"
+Component.options.__file = "src/pages/homepage/index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -56,9 +56,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d7658f06", Component.options)
+    hotAPI.createRecord("data-v-2410e930", Component.options)
   } else {
-    hotAPI.reload("data-v-d7658f06", Component.options)
+    hotAPI.reload("data-v-2410e930", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -134,7 +134,7 @@ if (false) {(function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_music_vue__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_521005cd_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_music_vue__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_15d60800_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_music_vue__ = __webpack_require__(196);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -153,12 +153,12 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_music_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_521005cd_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_music_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_15d60800_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_music_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "src\\components\\music.vue"
+Component.options.__file = "src/components/music.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] music.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -169,9 +169,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-521005cd", Component.options)
+    hotAPI.createRecord("data-v-15d60800", Component.options)
   } else {
-    hotAPI.reload("data-v-521005cd", Component.options)
+    hotAPI.reload("data-v-15d60800", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -275,7 +275,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-521005cd", esExports)
+     require("vue-hot-reload-api").rerender("data-v-15d60800", esExports)
   }
 }
 
@@ -296,25 +296,25 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "content"
   }, [_vm._m(0), _vm._v(" "), _c('h1', {
     staticClass: "description"
-  }, [_vm._v("Mamba Blog")]), _vm._v(" "), _c('ul', {
+  }, [_vm._v("火热招商")]), _vm._v(" "), _c('ul', {
     staticClass: "tab"
   }, [_c('li', {
     staticClass: "tab-item"
   }, [_c('span', {
     staticClass: "tab-link"
-  }, [_vm._v("Web:www.mambaxin.com")])]), _vm._v(" "), _c('li', {
+  }, [_vm._v("专注教育、培训")])]), _vm._v(" "), _c('li', {
     staticClass: "tab-item"
   }, [_c('span', {
     staticClass: "tab-link"
-  }, [_vm._v("QQ:462369233")])]), _vm._v(" "), _c('li', {
+  }, [_vm._v("热线:13952810716")])]), _vm._v(" "), _c('li', {
     staticClass: "tab-item"
   }, [_c('span', {
     staticClass: "tab-link"
-  }, [_vm._v("GitHub:kesixin / Mamba")])]), _vm._v(" "), _c('li', {
+  }, [_vm._v("QQ:405584182")])]), _vm._v(" "), _c('li', {
     staticClass: "tab-item"
   }, [_c('span', {
     staticClass: "tab-link"
-  }, [_vm._v("千里之行 始于足下")])])], 1)], 1)], 1)
+  }, [_vm._v("龙锦教育综合体")])])], 1)], 1)], 1)
 }
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
@@ -332,7 +332,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-d7658f06", esExports)
+     require("vue-hot-reload-api").rerender("data-v-2410e930", esExports)
   }
 }
 

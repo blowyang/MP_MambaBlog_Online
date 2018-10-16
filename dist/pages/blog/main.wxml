@@ -1,1 +1,1 @@
-<import src="../../components/index$1c861ce3" /><template is="index$1c861ce3" data="{{ ...$root['0'], $root }}"/>
+<import src="../../components/blog$10d3918c" /><template is="blog$10d3918c" data="{{ ...$root['0'], $root }}"/>

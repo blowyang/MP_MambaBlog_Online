@@ -11,19 +11,19 @@
                 <img src="https://upload.jianshu.io/users/upload_avatars/6673460/1f56c2bb-1e2d-4e4c-8c51-316a0b659e7e.png?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120"
                      class="avatar-item">
             </div>
-            <h1 class="description">Mamba Blog</h1>
+            <h1 class="description">火热招商</h1>
             <ul class="tab">
                 <li class="tab-item">
-                    <span class="tab-link">Web:www.mambaxin.com</span>
+                    <span class="tab-link">专注教育、培训</span>
                 </li>
                 <li class="tab-item">
-                    <span class="tab-link">QQ:462369233</span>
+                    <span class="tab-link">热线:13952810716</span>
                 </li>
                 <li class="tab-item">
-                    <span class="tab-link">GitHub:kesixin / Mamba</span>
+                    <span class="tab-link">QQ:405584182</span>
                 </li>
                 <li class="tab-item">
-                    <span class="tab-link">千里之行 始于足下</span>
+                    <span class="tab-link">龙锦教育综合体</span>
                 </li>
             </ul>
         </div>

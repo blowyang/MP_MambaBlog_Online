@@ -1,0 +1,26 @@
+<import src="music$218f7628" />
+<template name="homepage$88d1f950">
+  <view class="_div data-v-2410e930 homepage">
+    <template data="{{...$root[$kk+'0'], $root}}" is="music$218f7628"></template>
+    <view class="_div data-v-2410e930 content">
+      <view class="_div data-v-2410e930 avatar">
+        <image src="https://upload.jianshu.io/users/upload_avatars/6673460/1f56c2bb-1e2d-4e4c-8c51-316a0b659e7e.png?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120" class="_img data-v-2410e930 avatar-item"></image>
+      </view>
+      <view class="_h1 data-v-2410e930 description">火热招商</view>
+      <view class="_ul data-v-2410e930 tab">
+        <view class="_li data-v-2410e930 tab-item">
+          <label class="_span data-v-2410e930 tab-link">专注教育、培训</label>
+        </view>
+        <view class="_li data-v-2410e930 tab-item">
+          <label class="_span data-v-2410e930 tab-link">热线:13952810716</label>
+        </view>
+        <view class="_li data-v-2410e930 tab-item">
+          <label class="_span data-v-2410e930 tab-link">QQ:405584182</label>
+        </view>
+        <view class="_li data-v-2410e930 tab-item">
+          <label class="_span data-v-2410e930 tab-link">龙锦教育综合体</label>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

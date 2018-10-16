@@ -10,9 +10,9 @@
 export function share(){
     return {
         // 标题是话题标题
-        title: '千里之行,始于足下  不忘初心,方能始终',
+        title: '专注教育、培训！',
         // 路径为话题详情路径
         path: 'pages/homepage/main',
-        imageUrl: '/static/assets/kobe.png'
+        imageUrl: '/static/assets/longjin.png'
     };
 }
